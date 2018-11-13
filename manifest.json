@@ -1,0 +1,21 @@
+{	
+	"manifest_version" : 2,
+	"name": "CorectVOC",
+	"description" : "Extension loads in to every page (iframe including) and handle actions on input( type”text”) elements.",
+	"version" : "1",
+	"author" : "Echo_54",
+	"icons":{
+		"16" : "search.png",
+		"48" : "search.png",
+		"128" : "search.png"
+	},
+	 	"content_scripts" : [
+	 		{
+	 		"matches" : ["<all_urls>"],
+	 		"js" : ["code.js"],
+	 		"run_at" : "document_end"	
+			}],
+  "permissions": [
+    "tabs"
+  ]
+}
